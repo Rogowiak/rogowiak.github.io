@@ -45,9 +45,8 @@ body{
 .data{
     padding: 5px;
     color: white;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    display: flex;
+    flex-direction: column;
 }
 
 .number{
@@ -56,15 +55,19 @@ body{
     font-size: 2rem;
 }
 
+.data2{
+    display: flex;
+    justify-content: space-between;
+}
+
 .ownersName
 {
+    flex-wrap: nowrap;
     font-size: 1.25rem;
 }
 
 .expirationDate{
-    grid-column: span 1;
-    display: flex;
-    justify-content: flex-end;
+    align-self: flex-end;
     font-size: 1.25rem;
 }
 
@@ -180,6 +183,82 @@ button{
     font-size: 1.25rem;
 }
 
+.error{
+    color: red;
+    font-size: smaller;
+    padding-top: 3px;
+    padding-left: 3px;
+}
 
+.thankYouCard
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
 
+h4{
+    color: rgba(22, 19, 19, 0.55);
+}
 
+@media (max-width: 1280px)
+{
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    body{
+        background-image: url(/images/bg-main-mobile.png);
+        background-size: contain;
+        
+    }
+    .container{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+        width: fit-content;
+    }
+    .card{
+    
+        width: 400px;
+        justify-content: space-evenly;
+    }
+    .front{
+        margin-top: -110px;
+        order: 1;
+        align-self: flex-end;
+    }
+    .back{
+        align-self: flex-start;
+    }
+
+    .form{
+        padding: 0px;
+    }
+
+    .formContent{
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+        margin-left: -90px;
+        padding: 0px;
+    }
+
+    .name{
+        width: 400px;
+       
+    }
+    
+    .cardNumber{
+        width: 400px;
+    }
+
+    button{
+        width: 400px;
+    }
+}

@@ -17,13 +17,13 @@
         <div class="front">
           <svg width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/><path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/></svg>
           <div class="data">
-            <div class="number">0000 0000 0000 0000</div>
-            <div class="ownersName">Jane Appleseed</div>
-            <div class="expirationDate">00/00</div>
+            <div class="number">1234 5678 9123 0000</div>
+            <div class="data2"><div class="ownersName">Jane Appleseed</div>
+            <div class="expirationDate">MM/YY</div></div>
           </div>
           </div>
         <div class="back">
-          <div class="CVCCode">000</div>
+          <div class="CVCCode">123</div>
         </div>
       </div>
       <div class="form">
@@ -31,25 +31,29 @@
           <div class="name">
             <label for = "name"></label>CARDHOLDER NAME<br>
             <input type = "text" name = "name" id = "name" placeholder="e.g. Jane Appleseed">
+            <div class ="error" id ="nameError"></div>
           </div>
           <div class="cardNumber">
             <label for = "cardNumber">CARD NUMBER</label><br>
             <input type="text" name = "cardNumber" id = "cardNumber" placeholder="e.g. 1234 5678 9123 0000">
+            <div class="error" id="numberError"></div>
           </div>
           <div class="dateAndCVC">
             <div class="expDate">
               <label for = "expDate">EXP. DATE (MM/YY)</label><br>
               <div class="input">
-                <input type="number" name = "expMonth" id = "expMonth" placeholder="MM">
-                <input type="number" name = "expYear" id = "expYear" placeholder="YY">
+                <input type="text" name = "expMonth" id = "expMonth" placeholder="MM">
+                <input type="text" name = "expYear" id = "expYear" placeholder="YY">
               </div>
+              <div class="error" id="dateError"></div>
             </div>
             <div class="CVC">
               <label for = "CVC">CVC</label><br>
-              <input type="number" name = "CVC" id = "CVC" placeholder="e.g. 123">
+              <input type="text" name = "CVC" id = "CVC" placeholder="e.g. 123">
+              <div class="error" id="CVCerror"></div>
             </div>
           </div>
-          <button>Confirm</button>
+          <button id = "confirm"> Confirm </button>
         </div>
       </div>
     </div>
