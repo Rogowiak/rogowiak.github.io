@@ -1,6 +1,6 @@
 body{
     min-height: 100vh;
-    background-image: url(/images/bg-main-desktop.png);
+    background-image: url(https://rogowiak.github.io/interactive-card-details-form-main/images/bg-main-desktop.png);
     background-repeat: no-repeat;
     background-size: contain;
     display: flex;
@@ -32,7 +32,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-self: flex-start;
-    background-image: url(/images/bg-card-front.png);
+    background-image: url(https://rogowiak.github.io/interactive-card-details-form-main/images/bg-card-front.png);
     background-repeat: no-repeat;
     height: 229px;
     width: 450px;
@@ -77,7 +77,7 @@ body{
 {
     align-self: flex-end;
     color: white;
-    background-image: url(/images/bg-card-back.png);
+    background-image: url(https://rogowiak.github.io/interactive-card-details-form-main/images/bg-card-back.png);
     background-repeat: no-repeat;
     height: 229px;
     width: 450px;
@@ -209,7 +209,7 @@ h4{
         padding: 0px;
     }
     body{
-        background-image: url(/images/bg-main-mobile.png);
+        background-image: url(https://rogowiak.github.io/interactive-card-details-form-main/images/bg-main-mobile.png);
         background-size: contain;
         
     }
