@@ -33,7 +33,6 @@ body{
     align-items: center;
     background-color: hsl(224, 36%, 15%);
     border-radius: 8px;
-
     font-size: 2.95rem;
 }
 
@@ -134,4 +133,20 @@ header{
     width: 2.8vh;
     border-radius: 50%;
     background-color:hsl(6, 63%, 50%);
+}
+
+@media (max-width: 900px) 
+{
+    .calculator{
+        width: 70vw;
+    }
+    .display{
+        height: calc(5/10 * 45vw);
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    button{
+        margin: 1.3vw;
+        font-size: 1.85rem;
+    }
 }
